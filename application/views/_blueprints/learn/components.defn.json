@@ -1,0 +1,44 @@
+{
+	"__layout_learn_backend": {
+		"path": "/learn/learnBackend.php",
+		"vars": [
+			"title",
+			"newTutorial",
+			"delete_dialog",
+			"content",
+			"imgSrc"
+			
+		]
+	},
+	"__layout_learn_front": {
+		"path": "/learn/showLearn.php",
+		"vars": [
+			"tutorials",
+			"tid",
+			"address",
+			"mark_show",
+			"last_course",
+			"next_course",
+			"imgSrc"
+		]
+	},
+	"__layout_edit_course": {
+		"path": "/learn/editCourse.php",
+		"vars": ["delete_dialog"]
+	},
+	"__manage_tutorial" :{
+		"path": "/learn/manageTutorial.php",
+		"vars": [
+			"title",
+			"courses",
+			"tutorials",
+			"hide_course",
+			"delete_dialog"
+		]
+	},
+	"__markdownContent":{
+		"path": "markdownContent.php",
+		"vars": [
+		]
+	}
+}

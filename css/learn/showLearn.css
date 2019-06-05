@@ -1,0 +1,242 @@
+.show-learn {
+    border: 0;
+}
+
+.show-learn-left{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 97vh;
+    white-space: nowrap;
+    background-color: #ffffff;
+    position: fixed;
+    top: 55px;
+    z-index: 99;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    font-size: 16px;
+}
+
+.learn-list-top {
+    margin: 0px;
+    padding: 10px;  
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+}
+
+.learn-list-top li {
+    padding-left: 15px;
+    list-style-type: none;
+    cursor: default;
+    padding-top: 10px;
+}
+
+.learn-list-top li div:hover {
+    cursor: pointer;
+    color: #77B6FF;
+}
+
+details > summary {
+    font-size: larger;
+    color: #000;
+    outline: none;
+    text-overflow: ellipsis;
+    overflow : hidden;
+}
+
+details > summary:hover {
+    text-decoration: underline;
+    color: #77B6FF;
+}
+
+.showContent {
+    text-overflow: ellipsis;
+    overflow : hidden;
+    padding: 1px;
+}
+
+details[open] > summary { 
+    outline: none;
+}
+
+details {
+    color: #999;
+}
+
+.show-learn-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    position: relative;
+    top : -25px;
+}
+
+.show-learn-right .address {
+    padding-bottom: 8px;
+    font-size: 20px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: #666;
+    cursor: default;
+    z-index: 1;
+    border-bottom: 2px solid #999;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#awoo-img {
+    position: fixed;
+    width: 70%;
+    left: 300px;
+    top: 30%;
+}
+
+.show-learn-right .mark-show-content {
+    height: 75%;
+    overflow: auto;
+    word-break: break-all;
+    padding-top: 10px;
+    padding-bottom: 35px; 
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:rgb(255, 255, 255);
+}
+
+.item-title {
+    margin-left: 250px;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: .3em;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    word-wrap:break-word;
+}
+
+.show-learn-right .mark-show-content {
+    margin-left: 275px;
+    margin-right: 25px;
+}
+
+.show-learn-right .change-chap {
+    position: fixed;
+    bottom: 45%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+
+.change-chap .next_course {
+    padding-right: 20px;
+    color: rgba(153, 153, 153, 0.5);
+}
+
+.change-chap .last_course {
+    padding-left: 270px;
+    color: rgba(153, 153, 153, 0.5);
+}
+
+.show-learn-right .change-chap div {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.show-learn-right .change-chap div:hover { 
+    color: #77B6FF;
+}
+
+
+.search-category {
+    width: 250px;
+    height: 45px;
+    background: -webkit-radial-gradient(ellipse,white,rgb(207, 207, 207));
+    background: -o-radial-gradient(ellipse,white,rgb(207, 207, 207));
+    background: -moz-radial-gradient(ellipse,white,rgb(207, 207, 207));
+    background: radial-gradient(ellipse,white,rgb(207, 207, 207));
+    position: fixed;
+    z-index: 999;;
+}
+
+.search-category #search {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 75%;
+    height: 50%;
+    border-radius: 100px;
+    padding-left: 10px;
+}
+
+.show-learn-left .show-categorys {
+    height: 85%;
+    padding-top: 0;
+    margin-top: 45px;
+    padding-bottom: 6vh;
+    background-color: #fafafa;
+}
+/* RWD */
+.rwd-menubtn {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    left: 0;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    top: 60px;
+    z-index: 100;
+}
+
+@media screen and (max-width:768px) {
+    .show-learn-left .show-categorys {
+        margin-top: 58px;
+    }
+
+    .show-learn-left{
+        font-size: 20px;
+    }
+
+    .show-learn-right {
+        margin-left: 0;
+    }
+
+    .show-learn-left {
+        left: -250px;
+    }
+
+    .rwd-menubtn {
+        display: block;
+        left: 0;
+    }
+    
+    .item-title, .show-learn-right .mark-show-content {
+        margin-left: 0;
+    }
+
+    .item-title {
+        margin-top: 32px;
+    }
+
+    #awoo-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .change-chap .last_course {
+        padding-left: 20px;
+    }
+
+    .show-learn-right .change-chap {
+        bottom: 40px;
+    }
+
+    .show-learn-right .change-chap div {
+      font-size: 30px;
+    }
+}

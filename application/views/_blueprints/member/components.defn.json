@@ -1,0 +1,14 @@
+{
+    "__freshmanMember": {
+      "path": "/member/FreshmanMember.php",
+      "vars": [
+          "js_src","name","mail","department"
+      ]
+    },
+    "__layout_member": {
+      "path": "/member/layout-member.php",
+      "vars": [
+        "freshmanMember", "freshmanMember_bg", "title"
+      ]
+    }
+}

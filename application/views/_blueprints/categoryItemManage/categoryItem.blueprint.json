@@ -1,0 +1,105 @@
+{
+	"__bbc_id": "layout",
+	"__bbc_name": "__layout_freshman",
+	"__bbc_data": {
+		"header_menu": [
+			{   
+                "menu_name": "入門攻略",
+                "route": "member"
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "storeManager"
+            }
+		],
+		"backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "onboardAdmin"
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "onboardAdmin/userRoute"
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "index"
+            }
+		],
+		"title": "管理流程項目",
+		"isLogin": false,
+		"userName": "Kami",
+		"userId": "1",
+		"js_src": [
+			"js/categoryItemManage/categoryItem.js"
+		],
+		"css_src": [
+			"css/categoryItemManage/categoryItem.css",
+			"css/categoryItemManage/editCategoryItem.css"
+		],
+		"main_components": {
+			"__bbc_id": "categoryItem",
+			"__bbc_name": "__categoryItem",
+			"__bbc_data": {
+				"keyword": "",
+				"categoryList": [
+					{
+						"id": "1",
+						"title": "共用",
+						"description": "新人共用流程"
+					},
+					{
+						"id": "2",
+						"title": "rd",
+						"description": "rd新人必跑流程"
+					}
+				],
+				"content": {
+					"__bbc_id": "categoryItemContent",
+					"__bbc_name": "__categoryItemContent",
+					"__bbc_data": {
+					"img_src": "/images/selectCategory.png",
+						"delete_dialog": {
+							"__bbc_id": "deleteDialog",
+							"__bbc_name": "__deleteDialog_layout",
+							"__bbc_data": {
+							}
+						},
+						"category_info": {
+							"id": "1",
+							"title": "共用",
+							"description": "新人共用流程"
+						},
+						"itemList": [
+							{
+								"id": "1",
+								"category_item_id": "1",
+								"title": "報到"
+							},
+							{
+								"id": "2",
+								"category_item_id": "2",
+								"title": "領電腦"
+							},
+							{
+								"id": "3",
+								"category_item_id": "3",
+								"title": "新人報到程序表"
+							},
+							{
+								"id": "4",
+								"category_item_id": "4",								
+								"title": "人事資料表"
+							},
+							{
+								"id": "5",
+								"category_item_id": "5",								
+								"title": "禁止工作場所性騷擾聲明"
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

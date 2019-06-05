@@ -1,0 +1,115 @@
+{
+    "__bbc_id": "layout",
+    "__bbc_name": "__layout_freshman",
+    "__bbc_data": {
+        "header_menu": [
+            {
+                "menu_name": "入門攻略",
+                "route": "member1"
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "storeManager"
+            }
+        ],
+        "backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "onboardAdmin"
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "onboardAdmin/userRoute"
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "index"
+            }
+        ],
+        "title": "人員管理",
+        "isLogin": false,
+        "userName": "Kami",
+        "userId": "1",
+        "js_src": [
+            "js/userManage/show.js"
+        ],
+        "css_src": [
+            "css/userManage/userManage.css"
+        ],
+        "main_components": {
+            "__bbc_id": "userManage",
+            "__bbc_name": "__userManage",
+            "__bbc_data": {
+                "departmentId": "1",
+                "departmentList": [
+                    {
+                        "id": "management",
+                        "title": "管理部門"
+                    },
+                    {
+                        "id": "sales",
+                        "title": "銷售部門"
+                    },
+                    {
+                        "id": "seo",
+                        "title": "SEO技術部門"
+                    },
+                    {
+                        "id": "rd",
+                        "title": "研發部門"
+                    },
+                    {
+                        "id": "guam",
+                        "title": "關島之家"
+                    },
+                    {
+                        "id": "other",
+                        "title": "其他"
+                    }
+                ],
+                "showAllUser": {
+                    "__bbc_id": "showDeptUser",
+                    "__bbc_name": "__showDeptUser",
+                    "__bbc_data": {
+                        "userInfo": [
+                            {
+                                "isManager": true,
+                                "name": "Vivi",
+                                "gmail": "123@123.com",
+                                "abbreviation": "seo",
+                                "idx": 1
+                            },
+                            {
+                                "isManager": false,
+                                "name": "Lily",
+                                "gmail": "234@123.com",
+                                "abbreviation": "rd",
+                                "idx": 2
+                            }
+                        ]
+                    }
+                },
+                "freshmanMember": {
+                    "__bbc_id": "freshmanMember",
+                    "__bbc_name": "__freshmanMember",
+                    "__bbc_data": {
+                        "name":"xxx",
+                        "mail":"awoo.xxx@gmail.com",
+                        "department":[
+                            {
+                                "idx":"1",
+                                "abbreviation":"management",
+                                "name":"管理部門"
+                            },
+                            {
+                                "idx":"2",
+                                "abbreviation":"management",
+                                "name":"研發部門"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

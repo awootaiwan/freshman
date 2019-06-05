@@ -1,0 +1,12 @@
+{
+  "__deptRoute": {
+    "path": "/deptCategoryManage/deptRoute.php",
+    "vars": [
+      "departmentId",
+      "departmentList",
+      "categorys",
+      "deptCategorys"
+    ]
+  }
+
+}

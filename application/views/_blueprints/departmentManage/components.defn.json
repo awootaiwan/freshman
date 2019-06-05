@@ -1,0 +1,13 @@
+{
+    "__deptList": {
+      "path": "/departmentManage/index.php",
+      "vars": [
+        "departmentList"
+      ]
+    },
+    "__editDept": {
+      "path": "/departmentManage/edit.php",
+      "vars":[
+      ]
+    }
+  }

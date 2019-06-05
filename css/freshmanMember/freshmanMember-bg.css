@@ -1,0 +1,64 @@
+.member-bg {
+    position: fixed;
+    padding-top: 0;
+    left: 1px;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.member-bg .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.member-bg .triangle:nth-child(1) {
+    left: 20%;
+    top: -8%;
+    border-width: 10vw 20vw 10vw 0;
+    border-color: transparent #92c5ff transparent transparent;
+}
+
+.member-bg .triangle:nth-child(2) {
+    right: 14%;
+    bottom: 0;
+    border-width: 20vw 0 0 20vw;
+    border-color: transparent transparent transparent #5ba7ff;
+}
+
+.member-bg .triangle:nth-child(3) {
+    left: 6%;
+    top: 60%;
+    border-width: 10vw 0 10vw 20vw;
+    border-color: transparent transparent transparent #95c7ff;
+}
+
+.member-bg .triangle:nth-child(4) {
+    right: 4%;
+    bottom: 64%;
+    border-width: 0 20vw 20vw 0;
+    border-color: transparent #d8eaff transparent transparent;
+    -webkit-transform: rotate(-76deg);
+    transform: rotate(-76deg);
+}
+
+.member-bg .triangle:nth-child(5) {
+    left: 5%;
+    top: 17%;
+    border-width: 20vw 10vw 0 10vw;
+    border-color: #e5f1ff transparent transparent transparent;
+    -webkit-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+}
+
+.member-bg .triangle:nth-child(6) {
+    left: 77%;
+    top: 46%;
+    border-width: 10vw 20vw 10vw 0;
+    border-color: transparent #8bc1ff transparent transparent;
+    -webkit-transform: rotate(-76deg);
+    transform: rotate(-76deg);
+}

@@ -1,0 +1,471 @@
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#main {
+    margin-top: 80px;
+}
+
+.header .user {
+    margin-top: 19px;
+    padding-left: 2px;
+}
+
+.header li i {
+    margin-top: 19px;
+    font-size: 15px;
+}
+
+.header .logout a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #77B6FF;
+}
+
+.header li {
+    float: right;
+}
+
+.header .freshman-logo {
+    float: left;
+    outline: none;
+}
+
+.header .freshman-logo {
+    padding: 15px 15px;
+}
+
+.header .freshman-logo img {
+    height: 20px;
+    outline: none;
+}
+
+.header li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 19px 14px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    background-color: #77B6FF;
+    color: rgb(255, 255, 255);
+}
+
+.dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.dropbtn i {
+    padding-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #77B6FF;
+    color: white;
+}
+
+.delete-dialog {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(78, 75, 75, .5);
+}
+
+.delete-dialog-content {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    width: 30%;
+    border-radius: 0 0 20px 20px;
+    min-width: 350px;
+    overflow: visible;
+}
+
+.delete-dialog-content tr td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.delete-dialog-content tr td button {
+    border: 2px solid #333;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+.delete-dialog-content tr td button:hover {
+    border: 2px solid rgb(70, 156, 255);
+    color: rgb(70, 156, 255);
+}
+
+#btn-dialogCancel {
+    float: left;
+    margin-left: 30%;
+}
+
+#btn-dialogConfirm {
+    float: right;
+    margin-right: 30%;
+}
+
+.send-message table {
+    border-style: solid;
+}
+
+.send-message .bg-close {
+    display: none;
+    position: fixed;
+    z-index: 13;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.send-message-content {
+    display: none;
+    z-index: 14;
+    position: fixed;
+    bottom: 180px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, .5);
+    margin: auto;
+    width: 400px;
+    min-width: 300px;
+    height: 300px;
+    overflow: visible;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.show-send-message-btn {
+    z-index: 15;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #77B6FF;
+    font-size: 30px;
+    box-shadow: 5px 4px 5px 1px rgba(0, 0, 0, .2);
+    transform: rotateY(180deg);
+    opacity: 0.8;
+}
+
+.show-send-message-btn i:nth-child(2) {
+    display: none;
+}
+
+.show-send-message-btn:hover {
+    background: rgb(0, 119, 255);
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s;
+}
+
+.show-send-message-btn:hover i {
+    opacity: 1;
+}
+
+.show-send-message-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0.8;
+}
+
+.send-message .send-message-content .message-type {
+    padding-top: 20px;
+}
+
+.send-message .send-message-content {
+    padding-top: 20px;
+}
+
+.send-message .send-message-content .slack-id #slackId {
+    width: 70%;
+    height: 25px;
+    border: 1px solid #bbbbbb;
+}
+
+.send-message .send-message-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.message-content {
+    padding-top: 20px;
+}
+
+.message-content .messageContent {
+    height: 100%;
+    width: 70%;
+}
+
+.btn-cancel-message {
+    padding-bottom: 20px;
+}
+
+.send-message .send-message-content .btn-cancel-message {
+    float: right;
+    padding-right: 20px;
+}
+
+#btnSendMessage {
+    margin-left: 5px;
+}
+
+#btnSendMessage {
+    color: #ffffff;
+    background-color: rgb(0, 119, 255);
+    border: 2px solid rgb(0, 119, 255);
+    border-radius: 10px;
+}
+
+#btnCancelMessage {
+    color: #999;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #999;
+    border-radius: 10px;
+}
+
+#btnSendMessage:hover, #btnCancelMessage:hover {
+    color: #ffffff;
+    background-color: rgb(70, 156, 255);
+    border: 2px solid rgb(70, 156, 255);
+}
+
+.send-message-error {
+    color: #f81d47;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.select-type select {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+    font: 16px;
+    text-indent: 1%;
+}
+
+.select-type select :focus {
+    outline: none;
+}
+
+.select-type option {
+    font: 16px;
+}
+
+.select-type {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    color: #fff;
+}
+
+.select-type::after {
+    content: '\25BC';
+    background: rgb(0, 119, 255);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    pointer-events: none;
+    padding: 0 7px;
+}
+
+.rwd-user .g-signout2 i, .rwd-hide li a i {
+    margin-top: 0;
+    margin-left: 3px;
+    padding-right: 5px;
+}
+
+/* RWD */
+
+.rwd-icon {
+    display: none;
+}
+
+.rwd-menu {
+    display: none;
+}
+
+.topnav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .topnav {
+        display: block;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, .9);
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+        border-bottom: 1px solid #333;
+        cursor: default;
+    }
+    .topnav #myLinks {
+        display: none;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    .rwd-user2 {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0);
+        color: #333;
+        font-size: 20px;
+        top: 0;
+        margin-top: 18px;
+        position: fixed;
+        width: 50%;
+        margin-left: 23%;
+        margin-right: 25%;
+    }
+    .topnav #myLinks li {
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .topnav #myLinks li i {
+        margin-right: 5px;
+    }
+    .topnav #myLinks li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .topnav #myLinks li a:visited {
+        color: #fff;
+    }
+    .topnav #myLinks li a:active {
+        color: #fff;
+    }
+    .topnav .active {
+        color: black;
+        padding: 19px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    .topnav .icon {
+        background: #ffffff;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -2px;
+        color: #333;
+        float: right;
+    }
+    .topnav .icon i {
+        font-size: 20px;
+        padding: 18px 16px;
+    }
+    .active {
+        background-color: #fff;
+        color: white;
+    }
+    .topnav img {
+        cursor: default;
+    }
+    .active a {
+        text-decoration: none;
+        color: #333;
+    }
+    .active a:visited {
+        color: #333;
+    }
+    .active a:active {
+        color: #333;
+    }
+    .back-dropdown {
+        display: none;
+        background-color: rgb(128, 128, 128);
+    }
+    .topnav .active img {
+        height: 18px;
+    }
+    .send-message-content {
+        min-width: 310px;
+        width: 310px;
+    }
+}

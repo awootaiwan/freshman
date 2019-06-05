@@ -1,0 +1,118 @@
+.show-tutorial {
+    width: 100%;
+    height: 80vh;
+    margin: 0px auto;
+    text-align: center;
+    vertical-align: middle;
+    top : 65px;
+}
+
+.edit-tutorial {
+    width: 500px;
+    margin:0px auto;
+}
+
+.edit-tutorial-list {
+    font-size: 28px;
+    overflow: auto;
+    height: 630px;
+}
+
+.edit-tutorial-list-name {
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,.2);
+    margin-right: 10px;
+    cursor: default;    
+}
+
+.edit-tutorial-list-name a {
+    cursor: default; 
+}
+
+.edit-tutorial .edit-tutorial-list .edit-tutorial-list-name:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.edit-tutorial-list-name a:visited {
+    color: #333;
+}
+
+.edit-tutorial-list-name a:link {
+    color: #333;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.tutorial-name {
+    width: 90%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.delete-tutorial {
+    font-size: 28px;
+    float: right;
+    padding-right: 15px;
+    padding-top: 4px;
+    width: 25px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0);
+}
+
+.edit-tutorial-list-name:hover .delete-tutorial {
+    color: rgb(90, 90, 90);
+}
+
+.edit-tutorial-list-name:hover .delete-tutorial:hover {
+    color: rgb(0, 0, 0);
+}
+
+.new-tutorial {
+    padding-top: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.new-tutorial a {
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #77B6FF;
+    color: white;
+}
+
+.new-tutorial a:link {
+    color: white;
+}
+
+.new-tutorial a:visited {
+    color: white;
+}
+
+.new-tutorial a:hover {
+    background-color: rgb(0, 119, 255);
+    transition: 0.5s;
+}
+
+.delete-dialog {
+    text-align: center;
+}
+
+.delete-dialog table {
+    margin-left: auto; 
+    margin-right: auto;
+    border-style: solid; 
+}
+
+.delete-dialog table td {
+    padding: 20px;
+}

@@ -1,0 +1,39 @@
+{
+  "__categoryItem": {
+    "path": "/categoryItemManage/categoryItem.php",
+    "vars": [
+      "categoryList",
+      "content",
+      "keyword"
+    ]
+  },
+  "__categoryItemContent": {
+    "path": "/categoryItemManage/editCategoryItem.php",
+    "vars": [
+      "categoryInfo",
+      "categoryItemList",
+      "delete_dialog",
+      "img_src"
+    ]
+  },
+  "__item": {
+    "path": "/categoryItemManage/editItem.php",
+    "vars": [
+      "categoryList",
+      "item-info",
+      "delete_dialog",
+      "markdown_content"
+    ]
+  },
+  "__userRoute": {
+    "path": "/categoryItemManage/userRoute.php",
+    "vars": [
+      "departmentId",
+      "userId",
+      "departmentList",
+      "categorys",
+      "userCategorys"
+    ]
+  }
+
+}

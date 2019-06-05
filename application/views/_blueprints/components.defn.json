@@ -1,0 +1,44 @@
+{
+	"__layout_manage_tutorial": {
+		"path": "/learn/manageTutorial.php",
+		"vars": []
+	},
+	"__layout_freshman": {
+		"path": "/layout-freshman.php",
+		"vars": [
+			"header_menu",
+			"backend_menu",
+			"main_components",
+			"js_src",
+			"css_src",
+			"isLogin",
+			"userName",
+			"userId",
+			"title"]
+	},
+	"__deleteDialog_layout": {
+	  "path": "/categoryItemManage/deleteDialog.php",
+		  "vars": [""]
+	},
+	"__markdownContent_layout": {
+	  "path": "/markdownContent.php",
+		  "vars": [""]
+	},
+	"__freshmanMember_bg": {
+		"path": "/member/FreshmanMemberBg.php",
+		  "vars": [""]
+	},
+	"__categorys": {
+	  "path": "/categoryItemManage/categorys.php",
+	  "vars": [
+		"name",
+		"categoryList"
+	  ]    
+	},
+	"__itemList": {
+	  "path": "/categoryItemManage/itemList.php",
+	  "vars": [
+	  ]   
+  
+	}
+}

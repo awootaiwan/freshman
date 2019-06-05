@@ -1,0 +1,92 @@
+{
+    "__bbc_id": "layout",
+    "__bbc_name": "__layout_freshman",
+    "__bbc_data": {
+        "header_menu": [
+			{   
+                "menu_name": "入門攻略",
+                "route": "member"
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "storeManager"
+            }
+		],
+		"backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "onboardAdmin"
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "onboardAdmin/userRoute"
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "index"
+            }
+		],
+        "title": "編輯項目",
+        "isLogin": false,
+        "userName": "Kami",
+        "userId": "1",
+        "js_src": [
+            "js/markdown.js",
+            "js/categoryItemManage/editItem.js",
+            "js/categoryItemManage/categoryItem.js"   
+        ],
+        "css_src": [
+            "css/categoryItemManage/editItem.css",
+            "css/markdownContent.css",
+            "css/codemirror.css",
+            "css/one-dark.css",
+            "css/highlight.css"
+        ],
+        "main_components": {
+            "__bbc_id": "item",
+            "__bbc_name": "__item",
+            "__bbc_data": {
+                "markdown_content": {
+                    "__bbc_id": "markdownContent",
+                    "__bbc_name": "__markdownContent_layout",
+                    "__bbc_data": {
+                    }
+                },
+                "delete_dialog": {
+                    "__bbc_id": "deleteDialog",
+                    "__bbc_name": "__deleteDialog_layout",
+                    "__bbc_data": {
+                    }
+                },
+                "categoryList": [
+                    {
+                        "id": "1",
+                        "title": "新人"
+                    },
+                    {
+                        "id": "2",
+                        "title": "seo共用"
+                    },
+                    {
+                        "id": "3",
+                        "title": "rd共用"
+                    },
+                    {
+                        "id": "4",
+                        "title": "rd進階"
+                    },
+                    {
+                        "id": "5",
+                        "title": "seo進階"
+                    }
+                ],
+                "item_info": {
+                    "id": "1",
+                    "title": "共用",
+                    "categoryIds": "1,3",
+                    "content": "新人共用流程"
+                }
+            }
+        }
+    }
+}

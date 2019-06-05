@@ -1,0 +1,20 @@
+{
+  "__userManage": {
+    "path": "/userManage/index.php",
+    "vars": [
+      "departmentList", "showAllUser", "departmentId"
+    ]
+  },
+  "__showDeptUser": {
+    "path": "/userManage/showInfo.php",
+    "vars":[
+      "userInfo"
+    ]
+  },
+  "__freshmanMember": {
+    "path": "/member/FreshmanMember.php",
+    "vars": [
+      "name","mail","department","abbreviation"
+    ]
+  }
+}

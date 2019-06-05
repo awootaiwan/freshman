@@ -1,0 +1,180 @@
+.edit-dapt-layout {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(78, 75, 75, .5);
+}
+
+.edit-dapt-close-bg {
+    position: fixed;
+    z-index: 2000;
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(78, 75, 75, .5);
+}
+
+.edit-dapt-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2001;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    min-width: 300px;
+    overflow: visible;
+    -webkit-transform: translate(-50%, -70%);
+    -moz-transform: translate(-50%, -70%);
+    -ms-transform: translate(-50%, -70%);
+    -o-transform: translate(-50%, -70%);
+}
+
+.edit-close {
+    float: right;
+}
+
+.edit-close:hover {
+    color: #999;
+}
+
+.dept-input-area {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.dept-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.edit-input {
+    margin-top: 10px;
+}
+
+.edit-button {
+    border: 0;
+    color: #ffffff;
+    background-color: rgb(70, 156, 255);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0 15px;
+    height: 37px;
+    flex: 1;
+    margin-left: 10px;
+    width: 80px;
+}
+
+.edit-button:hover {
+    background-color: rgb(0, 119, 255);
+    color: #ffffff;
+    transition: .3s;
+}
+
+.dept-button-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.dept-list-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dept-list {
+    width: 70vw;
+    border: 2px rgb(70, 156, 255) solid;
+}
+
+.dept-list td {
+    border-top: 1px solid rgb(70, 156, 255);
+}
+
+.dept-list td, .dept-list th {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.dept-list tbody tr:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.dept-list tbody tr td i {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fa-edit {
+    color: rgb(245, 128, 60);
+}
+
+.fa-edit:hover {
+    color: rgb(238, 159, 113);
+    translate: .3s;
+}
+
+.fa-trash-alt {
+    color: rgb(255, 87, 87);
+    translate: .3s;
+    margin-left: 10px;
+}
+
+.fa-trash-alt:hover {
+    color: rgb(255, 142, 142);
+}
+
+.add-dept-button {
+    border: 0;
+    color: #ffffff;
+    background-color: rgb(0, 119, 255);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 120px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.add-dept-button:hover {
+    background-color: rgb(70, 156, 255);
+    color: #ffffff;
+    transition: .3s;
+}
+
+.fa-plus {
+    margin-right: 5px;
+}
+
+.add-dept-area {
+    width: 70%;
+}
+
+.error-msg {
+    color: rgb(226, 66, 66);
+}
+
+.error-area {
+    text-align: center;
+}

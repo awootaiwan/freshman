@@ -1,0 +1,186 @@
+.show-learn-right {
+    vertical-align: top;
+    margin-left: 300px;
+}
+
+.item {
+    font-size: 16px;
+    height: 70vh;
+}
+
+.check-item {
+    bottom: 0;
+    width: 90%;
+    text-align: center; 
+    padding-top: 20px;
+    position: relative;
+
+}
+.item-checkbox {
+    display: none;
+}
+
+#checkLabel:hover {
+    color: #777676;
+    cursor: pointer;
+}
+
+#checkLabel::before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 20px;
+    content: "\f0a4點我完成任務";
+}
+
+.item-checkbox:checked ~ #checkLabel {
+      color:#4ca1e7;
+      font-size: 25px;
+}
+
+.item-checkbox:checked ~ #checkLabel:hover {
+    color:#7db3e0;
+}
+
+.item-checkbox:checked ~ #checkLabel::before {
+    font-family: 'Font Awesome 5 Free';
+    content:"\f164完成囉！";
+}
+
+.item-title {
+    font-size: 2.5rem;
+    width: 90%;
+    margin-bottom: 20px;
+    padding-left: 20px; 
+    background: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.item-content {
+    line-height: 1.8;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.show-learn-left {
+    z-index: 1;
+    position: fixed;
+    left: 0px;
+    display: inline-block;
+    vertical-align: top;
+    height: 97vh;
+    white-space: nowrap;
+    background-color: #ffffff;
+    top: 55px;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    font-size: 16px;
+    background: #fafafa;
+    width: 250px;
+}
+
+.item-list {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.item-list li {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item-list li:hover {
+    color:#4ca1e7;
+}
+
+.item-li-check {
+    color: #000;
+}
+
+.item-li {
+    color: #999;
+}
+
+.rate-content {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 45px;
+    text-align: center;
+    width: 250px;
+}
+
+.rate-num {
+    font-size: 25px;
+}
+
+.mark-show {
+    border: none;
+}
+
+#text {
+    display: none;
+}
+
+#test {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    height: 70vh;
+}
+
+.CodeMirror {
+    display: none;
+}
+
+.mark-show-content {
+    height: 75%;
+    margin-right: 10px;
+    overflow: auto;
+    word-break: break-word;
+    background-color:rgb(255, 255, 255);
+}
+
+/* RWD */
+.rwd-menubtn {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: #999;
+    left: 251px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    top: 60px;
+    z-index: 100;
+}
+
+.rwd-menubtn i{
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .show-learn-right {
+        margin-left: 50px;
+    }
+
+    .show-learn-left {
+        left: -250px;
+    }
+
+    .rwd-menubtn {
+        display: block;
+        left: 0;
+    }
+}

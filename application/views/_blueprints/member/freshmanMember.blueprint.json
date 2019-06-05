@@ -1,0 +1,27 @@
+{
+	"__bbc_id": "layout_member",
+	"__bbc_name": "__layout_member",
+	"__bbc_data": {
+		"freshmanMember_bg": {
+			"__bbc_name": "__freshmanMember_bg",
+			"__bbc_data": {}
+		},
+		"freshmanMember": {
+			"__bbc_id" : "freshmanMember",
+			"__bbc_name": "__freshmanMember",
+			"__bbc_data": {
+				"name": "xxx",
+				"mail": "awoo.xxx@gmail.com",
+				"js_src": "",
+				"department": [
+					{
+						"idx": "1",
+						"abbreviation": "management",
+						"name": "管理部門"
+					}
+				]
+			}
+		},
+		"title": "個人資訊"
+	}
+}

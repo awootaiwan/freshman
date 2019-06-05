@@ -1,0 +1,25 @@
+{
+	"__onboardContent": {
+		"path": "/onboard/layout.php",
+		"vars": [
+            "leftContent",
+            "rightContent"
+		]
+    },
+    "__itemList": {
+        "path": "/onboard/itemList.php",
+        "vars":[
+            "items"
+        ]
+    },
+    "__itemContent": {
+        "path": "/onboard/itemContent.php",
+        "vars":[
+            "markdown_content",
+            "itemId",
+            "itemTitle",
+            "itemContent",
+            "itemChecked"
+        ]
+    }
+}

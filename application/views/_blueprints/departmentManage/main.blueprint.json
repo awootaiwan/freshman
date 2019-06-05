@@ -1,0 +1,94 @@
+{
+    "__bbc_id": "layout",
+    "__bbc_name": "__layout_freshman",
+    "__bbc_data": {
+        "header_menu": [
+            {
+                "menu_name": "入門攻略",
+                "route": "member1",
+                "icon": ""
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "storeManager",
+                "icon": ""
+            }
+        ],
+        "backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "onboardAdmin",
+                "icon": ""
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "onboardAdmin/userRoute",
+                "icon": ""
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "index",
+                "icon": ""
+            }
+        ],
+        "title": "部門管理",
+        "isLogin": false,
+        "userName": "Kami",
+        "userId": "1",
+        "logtype": "",
+        "js_src": [
+            "js/departmentManage/departmentManage.js"
+        ],
+        "css_src": [
+            "css/departmentManage/departmentManage.css"
+        ],
+        "main_components": {
+            "__bbc_id": "deptManage",
+            "__bbc_name": "__deptList",
+            "__bbc_data": {
+                "departmentList": [
+                    {
+                        "id": 1,
+                        "abbreviation": "management",
+                        "name": "管理部門"
+                    },
+                    {
+                        "id": 2,
+                        "abbreviation": "sales",
+                        "name": "銷售部門"
+                    },
+                    {
+                        "id": 3,
+                        "abbreviation": "seo",
+                        "name": "SEO技術部門"
+                    },
+                    {
+                        "id": 4,
+                        "abbreviation": "rd",
+                        "name": "研發部門"
+                    },
+                    {
+                        "id": 5,
+                        "abbreviation": "guam",
+                        "name": "關島之家"
+                    },
+                    {
+                        "id": 6,
+                        "abbreviation": "other",
+                        "name": "其他"
+                    }
+                ],
+                "editDept": {
+                    "__bbc_name": "__editDept",
+                    "__bbc_data": {
+                    }
+                },
+                "deleteDept": {
+                    "__bbc_name": "__deleteDialog_layout",
+                    "__bbc_data": {
+                    }
+                }
+            }
+        }
+    }
+}

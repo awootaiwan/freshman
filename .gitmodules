@@ -1,0 +1,6 @@
+[submodule "application/libraries/BobBuilder"]
+	path = application/libraries/BobBuilder
+	url = git@github.com:awootaiwan/bob-the-builder.git
+[submodule "models/v2"]
+	path = models/v2
+	url = git@github.com:awootaiwan/model.git

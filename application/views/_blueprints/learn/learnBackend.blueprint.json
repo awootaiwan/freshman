@@ -1,0 +1,136 @@
+{
+    "__bbc_id": "layout",
+    "__bbc_name": "__layout_freshman",
+    "__bbc_data": {
+        "header_menu": [
+            {
+                "menu_name": "入門攻略",
+                "route": "member"
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "storeManager"
+            }
+        ],
+        "backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "storeManager"
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "storeManager"
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "index"
+            }
+        ],
+        "title": "test",
+        "isLogin": false,
+        "userName": "123",
+        "userId": "1",
+        "js_src": [
+            "js/markdown.js",
+            "js/learn/learnBackend.js",
+            "js/learn/manageTutorial.js",
+            "js/learn/editCourse.js",
+            "js/learn/nestedSortable.js"
+        ],
+        "css_src": [
+            "css/learn/learnBackend.css",
+            "css/categoryItemManage/categoryItem.css",
+            "css/categoryItemManage/editCategoryItem.css",
+            "css/learn/manageTutorial.css",
+            "css/markdownContent.css",
+            "css/learn/editCourse.css",
+            "css/learn/editCourse.css",
+            "css/codemirror.css",
+            "css/one-dark.css",
+            "css/highlight.css"
+        ],
+        "main_components": {
+            "__bbc_id": "layout_learn_backend",
+            "__bbc_name": "__layout_learn_backend",
+            "__bbc_data": {
+                "title": [
+                    {
+                        "name": "dd",
+                        "id": "1"
+                    },
+                    {
+                        "name": "ss",
+                        "id": "2"
+                    }
+                ],
+                "imgSrc": "images/awoologo-learn.png",
+                "content": {
+                    "__bbc_id": "manage_tutorial",
+                    "__bbc_name": "__manage_tutorial",
+                    "__bbc_data": {
+                        "title": "",
+                        "courses": [
+                            {
+                                "title": "1",
+                                "id": 1
+                            },
+                            {
+                                "title": "2",
+                                "id": 2
+                            }
+                        ],
+                        "tutorials": [
+                            {
+                                "title": "3",
+                                "id": 3,
+                                "levels": 1,
+                                "level": "1",
+                                "compare": "-1"
+                            },
+                            {
+                                "title": "4",
+                                "id": 4,
+                                "levels": 2,
+                                "level": "1-1",
+                                "compare": "-1"
+                            },
+                            {
+                                "title": "5",
+                                "id": 5,
+                                "levels": 3,
+                                "level": "1-1-1",
+                                "compare": "-1"
+                            },
+                            {
+                                "title": "6",
+                                "id": 6,
+                                "levels": 1,
+                                "level": "2-2",
+                                "compare": "2"
+                            }
+                        ],
+                        "hide_course": {
+                            "__bbc_id": "layout_edit_course",
+                            "__bbc_name": "__layout_edit_course",
+                            "__bbc_data": {
+                                "title": [],
+                                "newTutorial": "",
+                                "markdownContent": {
+                                    "__bbc_id": "markdownContent",
+                                    "__bbc_name": "__markdownContent",
+                                    "__bbc_data": {}
+                                }
+                            }
+                        }
+                    }
+                },
+                "newTutorial": "/freshman/ManageLearn/indexTutorial",
+                "delete_dialog": {
+                    "__bbc_id": "deleteDialog",
+                    "__bbc_name": "__deleteDialog_layout",
+                    "__bbc_data": {}
+                }
+            }
+        }
+    }
+}

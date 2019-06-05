@@ -1,0 +1,136 @@
+{
+    "__bbc_id": "layout",
+    "__bbc_name": "__layout_freshman",
+    "__bbc_data": {
+        "header_menu": [
+            {
+                "menu_name": "入門攻略",
+                "route": "member1"
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "storeManager"
+            }
+        ],
+        "backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "onboardAdmin"
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "onboardAdmin/userRoute"
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "index"
+            }
+        ],
+        "title": "指定新人流程",
+        "isLogin": false,
+        "userName": "Kami",
+        "userId": "1",
+        "js_src": [
+            "js/categoryItemManage/userRoute.js"
+        ],
+        "css_src": [
+            "css/categoryItemManage/userRoute.css"
+        ],
+        "main_components": {
+            "__bbc_id": "userRoute",
+            "__bbc_name": "__userRoute",
+            "__bbc_data": {
+                "departmentId": "1",
+                "userId": "1",
+                "departmentList": [
+                    {
+                        "abbreviation": "management",
+                        "name": "管理部門"
+                    },
+                    {
+                        "abbreviation": "sales",
+                        "name": "銷售部門"
+                    },
+                    {
+                        "abbreviation": "seo",
+                        "name": "SEO技術部門"
+                    },
+                    {
+                        "abbreviation": "rd",
+                        "name": "研發部門"
+                    },
+                    {
+                        "abbreviation": "guam",
+                        "name": "關島之家"
+                    },
+                    {
+                        "abbreviation": "other",
+                        "name": "其他"
+                    }
+                ],
+                "categorys": {
+                    "__bbc_id": "categorys",
+                    "__bbc_name": "__categorys",
+                    "__bbc_data": {
+                        "name": "未加入分類",
+                        "categoryList": [
+                            {
+                                "id": "2",
+                                "title": "RD",
+                                "description": "test",
+                                "isUserDeptCategory": "F"      
+                            },
+                            {
+                                "id": "4",
+                                "title": "前端工程師",
+                                "description": "test",
+                                "isUserDeptCategory": "F" 
+                            },
+                            {
+                                "id": "6",
+                                "title": "會計",
+                                "description": "test",
+                                "isUserDeptCategory": "F" 
+                            }                      
+                        ]
+                        
+                    }
+                },
+                "userCategorys": {
+                    "__bbc_id": "userCategorys",
+                    "__bbc_name": "__categorys",
+                    "__bbc_data": {
+                        "name": "已加入分類",
+                        "categoryList": [
+                            {
+                                "id": "1",
+                                "title": "共用",
+                                "description": "test",
+                                "isUserDeptCategory": "F"        
+                            },
+                            {
+                                "id": "3",
+                                "title": "後端工程師",
+                                "description": "test",
+                                "isUserDeptCategory": "F" 
+                            },
+                            {
+                                "id": "5",
+                                "title": "SEO",
+                                "description": "test",
+                                "isUserDeptCategory": "T" 
+                            }                      
+                        ]
+                        
+                    }
+                },
+                "itemList": {
+                    "__bbc_id": "itemList",
+                    "__bbc_name": "__itemList",
+                    "__bbc_data": {                                                
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+*.swp
+dbConfig/*
+.htaccess
+application/config/development/*
+.DS_Store 
+application/controllers/Test.php
+
+dev_js/node_modules

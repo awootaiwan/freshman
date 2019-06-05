@@ -1,0 +1,121 @@
+.manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-department select {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+    font: 16px;
+    text-indent: 1%;
+    border: 1px solid #ccc;
+}
+
+.select-department select :focus {
+    outline: none;
+}
+
+.select-department option {
+    font: 16px;
+}
+
+.select-department {
+    position: relative;
+    background: #fff;
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    color: #fff;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.select-department::after {
+    content: '\25BC';
+    background: rgb(0, 119, 255);
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    padding: 0 7px;
+}
+
+.user-info{
+    border: 2px rgb(70, 156, 255) solid;
+    width: 70vw;
+    font-size: 20px;
+}
+
+.user-info th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.user-info td {
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 1px solid rgb(70, 156, 255);
+}
+
+.user-info tbody tr:hover {
+background-color: rgb(230, 230, 230);
+}
+
+.hide-freshman-member {
+    display: none;
+}
+
+.hide-freshman-member .member-bg-close {
+    position: fixed;
+    z-index: 2000;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.hide-freshman-member .member {
+    z-index: 2001;
+    position: fixed;
+}
+
+.user-add-area {
+    width: 70%;
+}
+
+.user-add {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 120px;
+    float: left;
+    border: 0;
+    color: #ffffff;
+    background-color: rgb(0, 119, 255);
+    margin-bottom: 20px;
+}
+
+.user-add:hover {
+    background-color: #77B6FF;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}

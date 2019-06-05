@@ -1,0 +1,112 @@
+%buttonStyle
+    outline: none
+    background-color: #fff
+    width: 100%
+    text-align: center
+    border: 1px solid #999
+    cursor: pointer
+    margin-top: 20px
+body
+    overflow: hidden
+.member-bg
+    .triangle
+        position: absolute
+        width: 0
+        height: 0
+        border-style: solid
+    .triangle:nth-child(1)
+        left: 20%
+        top: -8%
+        border-width: 10vw 20vw 10vw 0
+        border-color: transparent #c9e2ff transparent transparent
+    .triangle:nth-child(2)
+        right: 14%
+        bottom: 0
+        border-width: 20vw 0 0 20vw
+        border-color: transparent transparent transparent #c9e2ff
+    .triangle:nth-child(3)
+        left: 6%
+        top: 66%
+        border-width: 10vw 0 10vw 20vw
+        border-color: transparent transparent transparent #c9e2ff
+    .triangle:nth-child(4)
+        right: 4%
+        bottom: 64%
+        border-width: 0 20vw 20vw 0
+        border-color: transparent #c9e2ff transparent transparent
+        transform: rotate(-76deg)
+    .triangle:nth-child(5)
+        left: 5%
+        top: 17%
+        border-width: 20vw 10vw 0 10vw
+        border-color: #c9e2ff transparent transparent transparent
+        transform: rotate(-130deg)
+    .triangle:nth-child(6)
+        left: 77%
+        top: 46%
+        border-width: 10vw 20vw 10vw 0
+        border-color: transparent #c9e2ff transparent transparent
+        transform: rotate(-76deg)
+
+.member
+    min-width: 200px
+    width: 500px
+    height: 400px
+    background-color: rgba(255, 255, 255)
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .3)
+    border: 1px solid #999
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    h1
+        color: #666
+        text-align: center
+        padding-top: 10px
+        font-size: 30px
+    .content
+        margin-top: 20px
+        margin-left: 9%
+        margin-right: 9%
+        div:nth-child(2), div:nth-child(3)
+            margin-top: 20px
+        div:nth-child(4)
+            margin-top: 10px
+        input, select
+            box-sizing: border-box
+            margin-top: 3px
+            width: 100%
+            height: 5vh
+            border: 1px solid rgb(220, 220, 220)
+            padding: 5px
+        select
+            cursor: pointer
+    .button
+        margin-top: 10px
+        margin-left: 9%
+        margin-right: 9%
+        div:nth-child(1)
+            color: #ffffff
+            background-color: rgb(0, 119, 255)
+            border: 1px solid rgb(0, 119, 255)
+        div:nth-child(1):hover
+            background-color: #77b6ff
+            border: 1px solid #77b6ff
+            transition: .3s
+        div:nth-child(2)
+            color: #999
+            background-color: rgb(255, 255, 255)
+            border: 1px solid #999
+            margin-top: 10px
+        div:nth-child(2):hover
+            background-color: rgb(220, 220, 220)
+            color: #fff
+            transition: .3s
+        div
+            @extend %buttonStyle
+            padding: 10px 0
+        
+@media screen and (max-width: 400px)
+    .member
+        width: 100%
+

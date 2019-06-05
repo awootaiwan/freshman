@@ -1,0 +1,376 @@
+.tutorial-edit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutorial-set {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tutorial-edit  button {
+    border-radius: 10px;
+    border: 0;
+    background-color:rgb(0, 119, 255);
+    color: #ffffff;
+}
+
+.tutorial-edit  button:hover {
+    transition: .5s;
+    background-color:#77B6FF;
+}
+
+.tutorial-change > button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#tutorial-delete {
+    border-radius: 10px;
+    border: 0;
+    background-color:rgb(255, 87, 87);
+    color: #ffffff;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+#tutorial-delete:hover {
+    transition: .5s;
+    background-color:rgb(255, 142, 142);
+}
+
+.tutorial-title {
+    display: flex;
+}
+
+.all-text {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.all-text .text-set {
+    padding-left: 10px;
+    border: 0;
+    border-radius: 15px;
+    text-overflow: ellipsis;
+}
+
+.all-text > input {
+    height: 4vh;
+    width: 33vw;
+}
+
+.all-text > i {
+    margin-right: 5px;
+}
+
+.all-text #title-edit {
+    color: rgb(95, 95, 95);
+}
+
+.all-text #title-edit:hover {
+    color: #77B6FF;
+}
+
+.connectedSortable li i:hover {
+    color: #77B6FF;
+}
+
+.title-text {
+    display: inline-block;
+    width: 5em;
+}
+
+#tutorial-title-save {
+    display: none;
+    margin-left: 10px;
+}
+
+#tutorial-save {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#tutorial-delete {
+    display: inline-block;
+}
+
+.tutorial-change > button{
+    height: 40px;
+}
+
+.relation-edit {
+    display: flex;
+    height: 75vh;
+    margin-top: 10px;
+}
+
+.courses {
+    flex-grow: 1.5;
+    margin-right: 2rem;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 10px 10px 8px 0 rgba(0,0,0,.2);
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    width: 30%;
+    min-width: 100px;
+    position: relative;
+}
+
+.tutorial-titleList {
+    background-color: #469cff;
+    color: #fff;
+    border: 0;
+    border-radius: 20px 20px 0 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+.show-courses {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:10px;
+    font-size: 20px; 
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.search {
+    top: 51px;
+    height: 45px;
+    background: -webkit-radial-gradient(ellipse,white,rgb(222, 222, 222));
+    background: -o-radial-gradient(ellipse,white,rgb(222, 222, 222));
+    background: -moz-radial-gradient(ellipse,white,rgb(222, 222, 222));
+    background: radial-gradient(ellipse,white,rgb(222, 222, 222));  
+}
+
+.search #course-search {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 75%;
+    height: 50%;
+    border-radius: 100px;
+    padding-left: 10px;
+
+}
+.search i {
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
+
+.search i:hover {
+    color: rgb(0, 0, 0);
+}
+
+.course-move {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 2rem;
+    border-right: 1px solid;
+    background-color: rgb(255, 255, 255);
+}
+
+.course-move button {
+    display: block;
+}
+
+.relation {
+    flex-grow: 1.5;
+    width: 40%;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 10px 10px 8px 0 rgba(0,0,0,.2);
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+.relation ul {
+    padding-left: 2rem; 
+    list-style: none;
+    min-height: 30px;
+    background-color: #f8f8f8;
+    padding-top: 5px;
+}
+
+.relation > ul {
+    padding-left: 10px; 
+    overflow: auto;
+    height: 65vh;
+}
+
+.relation ul li:not(:first-child){
+    margin-top: 5px;
+}
+
+.relation ul li{
+    background-color: #ffffff;
+    text-indent: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: justify;
+    border-top: 1px solid rgba(224, 224, 224,.3);
+}
+
+.relation-move {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.relation-move button {
+    display: block;
+}
+
+.course-move button,.relation-move button {
+    background-color: rgba(255, 255, 255);
+    padding: 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.course-move button i,.relation-move button i {
+    color: #77B6FF;
+    font-size: 50px;
+}
+
+.course-move button i:hover,.relation-move button i:hover {
+    color: rgb(0, 119, 255);
+}
+
+.courses ul {
+    height: 60vh;
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.courses>ul li {
+    list-style: none;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.course-add a {
+    color: rgb(179, 179, 179);
+}
+
+.selected {
+    background-color: #b3d4fc;
+}
+
+.relation-edit ul li{
+    font-size: 20px;
+    padding-top: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.course-add > a:link {
+    color:#333;
+    text-decoration:none
+}
+
+.course-add > a:visited {
+    color:#333;
+}
+
+.course-add:hover a {
+    color: #77B6FF;
+}
+
+.connectSortable li {
+    cursor: grab;
+}
+
+.connectSortable li i {
+    color: rgb(95, 95, 95);
+}
+
+.connectSortable li i:hover {
+    cursor: pointer;
+    color: #77B6FF;
+}
+
+.connectSortable {
+    padding-top: 10px;
+}
+
+li .list-manage {
+    border: none;
+}
+
+.edit-course {
+    background-color: rgba(255, 255, 255, .8);
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: visible;
+    padding: 20px 30px 100px 30px;
+    margin-top: 20px;
+}
+
+.item-selected {
+    background-color: #84b7f5 !important; 
+    width: 100%;
+    height: 15px;
+}
+
+.sorting-item {
+    background-color: rgb(179, 179, 179);
+}
+
+.hide-course {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(78, 75, 75, .5);
+    z-index: 20;
+}
+
+.course-add::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    padding-right: 5px;
+}
+
+.tutorial-change > .course-add {
+    background-color: #f9a60f;
+}
+
+.tutorial-change > .course-add:hover {
+    background-color: #f9a60f8c;
+}
+/* RWD */
+@media screen and (max-width: 768px) {
+    .tutorial-set {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .courses, .relation {
+        margin-right: 0;
+        box-shadow: none;
+    }
+
+    .tutorial-title {
+        margin-left: 50px;
+    }
+}

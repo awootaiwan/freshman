@@ -1,0 +1,312 @@
+.content {
+    border-style:solid;
+    border:1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.2);
+    margin-top: 2%;
+}
+
+.content-items {
+    width: 60%;
+    border-collapse: collapse;
+    margin-left:auto; 
+    margin-right:auto;
+    padding-bottom: 3%;
+    padding-top:5%;
+}
+
+.content-items .item {
+    list-style-position:inside;
+    border: 1px solid rgba(224, 224, 224,.3);
+    margin-bottom: 6px;
+    width: 100%;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    display:inline-block;
+}
+
+.content-items .item:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.drop-down-item li a i {
+    float: right;
+    color: rgba(255, 255, 255, 0);
+}
+
+.content-items .item:hover .drop-down-item li a i {
+    color: #333;
+}
+
+.show-item {
+    border-style: solid;
+    width: 85%;
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 10px;
+    word-break: break-all;
+}
+
+.show-drop-down-item {
+    width: 10%;
+    border-style:solid;
+    border-left-style:none;
+}
+
+.edit-category table {
+    border-style:solid; 
+}
+
+.delete-dialog table {
+    border-style:solid;
+}
+
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type:none;
+}
+
+.drop-down-category {
+    float:right;
+}
+
+.drop-down-category, 
+.show-drop-down-item ul {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.drop-down-category li, 
+.show-drop-down-item ul li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.drop-down-category li a i {
+    color: #333;
+}
+
+.drop-down-category > li:last-child, 
+.show-drop-down-item ul > li:last-child {
+    border-right: none;
+}
+
+.drop-down-category li a, 
+.show-drop-down-item a {
+    display: block;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.drop-down-category li a i {
+    margin-right: 20px;
+}
+
+.drop-down-category a:visited {
+    color: #333;
+}
+
+.show-drop-down-item ul a:visited {
+    color: #333;
+}
+
+.drop-down-category ul,
+.show-drop-down-item ul ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 60%;
+    width: 10vw;
+    cursor: pointer;
+}
+
+.show-drop-down-item ul ul {
+    left: 5px;
+}
+
+.drop-down-category ul li, 
+.show-drop-down-item ul ul li {
+    border-bottom: #ccc 1px solid;
+}
+.drop-down-category ul,
+.show-drop-down-item ul ul {
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.2);
+}
+.drop-down-category ul li:last-child , 
+.show-drop-down-item ul ul li:last-child {
+    border-bottom: none;
+}
+
+.drop-down-category ul, 
+.show-drop-down-item ul ul { 
+    display: none;
+    z-index: 1;
+    background-color: #fff;
+    text-align: center;
+}
+
+.drop-down-category li:hover > ul,
+.show-drop-down-item ul li:hover > ul { 
+    display: block;
+}
+
+.edit-category {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(78, 75, 75, .5);
+
+}
+
+.edit-category-content {
+    background-color: rgba(255, 255, 255);
+    margin: auto;
+    width: 30%;
+    border-radius: 20px;
+    min-width: 350px;
+    overflow: visible;
+}
+
+#btnToAddItemPage {
+    background-color: rgb(70, 156, 255);
+    color: #fff;
+    border: 0;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#btnToAddItemPage:hover {
+    transition: .5s;
+    background-color: rgb(0, 119, 255);
+}
+
+#awoo-img {
+    position: fixed;
+    width: 70%;
+    left: 300px;
+    top: 30%;
+}
+
+#categoryTitle, .tooltip {
+    font-size: 200%;
+    word-break: break-all;
+    cursor: default;
+}
+
+.tooltip i {
+    color: #999;
+}
+
+.tooltip i:hover {
+    color: #77B6FF;
+}
+
+
+.drop-down-category li ul li:hover,
+.drop-down-item li ul li:hover {
+    background-color:rgb(70, 156, 255);
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-category .edit-category-content .category-name {
+    padding-top: 10px;
+}
+
+.edit-category .edit-category-content .addTutorial {
+    padding-top: 20px;
+    width: 60%;
+}
+
+.edit-category .edit-category-content #addTutorial {
+    font-size: 25px;
+}
+
+.edit-category .edit-category-content .tutorial-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+}
+
+.edit-category .edit-category-content .category-name #title {
+    width: 60%;
+}
+.edit-category .edit-category-content .tutorial-name #tutorialTitle {
+    width: 60%;
+    height: 30px;
+}
+
+.edit-category .edit-category-content .category-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.edit-category .edit-category-content .category-description #description {
+    height: 100%;
+    width: 60%;
+}
+
+.closeOk-btn {
+    padding-bottom: 20px;
+}
+
+.edit-category .edit-category-content tr td #close-btn {
+    font-size: 30px;
+    cursor: default;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.edit-category .edit-category-content .closeOk-btn {
+    float: right;
+    padding-right: 40px;
+}
+
+.edit-category .edit-category-content .closeOk-btn button {
+    background-color: rgba(255, 255, 255, 0);
+    border:2px solid #333;
+    color: #333;
+    border-radius: 10px;
+}
+
+.edit-category .edit-category-content .closeOk-btn button:hover {
+    color: rgb(70, 156, 255);
+    border: 2px solid rgb(70, 156, 255);
+}
+
+.edit-category .edit-category-content tr td #close-btn:hover {
+    color: rgb(155, 155, 155);
+}
+
+.error {
+    color: #f81d47
+}
+
+/* RWD */
+@media screen and (max-width: 768px) {
+    #awoo-img {
+        position: fixed;
+        left: 50%;
+        width: 70%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+    }
+}
+

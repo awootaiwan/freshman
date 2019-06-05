@@ -1,0 +1,124 @@
+.member .button div {
+  outline: none;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #999;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.member {
+  min-width: 200px;
+  width: 500px;
+  height: 400px;
+  background-color: rgba(255, 255, 255);
+  -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #999;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -moz-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  -o-transform: translate(-50%, -60%);
+}
+
+.member h1 {
+  color: #666;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.member .content {
+  margin-top: 20px;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.member .content div i {
+  padding-right: 5px
+}
+
+.member .content div:nth-child(2), .member .content div:nth-child(3) {
+  margin-top: 20px;
+}
+
+.member .content div:nth-child(4) {
+  margin-top: 10px;
+}
+
+.member .content input, .member .content select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 3px;
+  width: 100%;
+  height: 5vh;
+  border: 1px solid gainsboro;
+  padding: 5px;
+}
+
+.member .content select {
+  cursor: pointer;
+}
+
+.member .content select::after {
+    content: '\25BC';
+    background: #07f;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    padding: 0 7px;
+}
+
+.member .button {
+  margin-top: 10px;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.member .button div:nth-child(1) {
+  color: #ffffff;
+  background-color: #0077ff;
+  border: 1px solid #0077ff;
+}
+
+.member .button div:nth-child(1):hover {
+  background-color: #77b6ff;
+  border: 1px solid #77b6ff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.member .button div:nth-child(2) {
+  color: #999;
+  background-color: white;
+  border: 1px solid #999;
+  margin-top: 10px;
+}
+
+.member .button div:nth-child(2):hover {
+  background-color: gainsboro;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.member .button div {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .member {
+    width: 100%;
+  }
+}

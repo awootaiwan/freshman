@@ -1,0 +1,164 @@
+.edit-course .closebtn {
+    font-size: 30px;
+    cursor: default;
+}
+
+.edit-course .closebtn:hover {
+    color: #999;
+}
+
+.edit-course-top {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+
+.course-title {
+    border-style: solid;
+    cursor: pointer;
+}
+
+.course-title .course-text-set {
+    border: none;
+    background: none;
+    padding-left: 10px;
+    border-bottom: 2px solid #999;
+    width: 40vw;
+    height: 100%;
+    font-size: 20px;
+    text-overflow: ellipsis;
+}
+
+.course-title>input {
+    height: 4vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+.course-title i {
+    cursor: pointer;
+}
+
+.course-check {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.course-check button {
+    cursor: pointer;
+    border-radius: 10px;
+    height: 5vh;
+    border: 2px solid #333;
+    background-color: rgba(0, 0, 0, 0);
+    color: #333;
+}
+
+.course-check #delete-course {
+    margin-right: 5px;
+}
+
+.course-check button:hover {
+    color: #77B6FF;
+    border: 2px solid #77B6FF;
+}
+
+.edit-course-content {
+    display: flex;
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 100%;
+}
+
+.mark-down {
+    width: 100%;
+    overflow: auto;
+    resize: none;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    height: auto;
+    background-color: rgb(63, 89, 117);
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.mark-show {
+    width: 100%;
+    padding: 0px 5px;
+    overflow: auto;
+    text-align: left;
+    padding-left: 15px;
+    height: auto;
+    word-break: break-all;
+    background-color: #fff;
+    padding-top: 5px;
+    border: 1px solid #666;
+    border-left: 0;
+}
+
+.delete-dialog {
+    text-align: center;
+}
+
+.delete-dialog table {
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+}
+
+.delete-dialog table td {
+    padding: 20px;
+}
+
+#course-title-save {
+    display: none;
+}
+
+.mark-down .mark-show {
+    flex: 1;
+    height: 100%;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+.edit-course-top .markdown-learn {
+    margin-top: 5px;
+    margin-right: 45%;
+    font-size: 35px;
+    text-align: left;
+}
+
+.edit-course-top .markdown-learn .markdown-learn-description {
+    position: absolute;
+    left: 20vw;
+    visibility: hidden;
+    width: 60%;
+    height: 80%;
+    background-color:rgba(0, 0, 0,.8);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.markdown-learn-QA:hover  {
+    color: #77B6FF;
+    cursor: default;
+}
+
+.markdown-learn-iframe {
+    width: 100%;
+    height: 90%;
+}
+.markdown-learn-close {
+    float: right;
+    margin: 5px 10px;
+}
+
+.markdown-learn-close:hover {
+    color: #999;
+}

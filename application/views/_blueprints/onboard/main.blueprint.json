@@ -1,0 +1,99 @@
+{
+	"__bbc_id": "layout",
+	"__bbc_name": "__layout_freshman",
+	"__bbc_data": {
+		"header_menu": [
+			{   
+                "menu_name": "入門攻略",
+                "route": "onboard"
+            },
+            {
+                "menu_name": "上手教程",
+                "route": "showLearn"
+            }
+		],
+		"backend_menu": [
+            {
+                "menu_name": "管理流程項目",
+                "route": "onboardAdmin"
+            },
+            {
+                "menu_name": "新人指定流程",
+                "route": "onboardAdmin/userRoute"
+            },
+            {
+                "menu_name": "管理學習教程",
+                "route": "manageLearn"
+            }
+		],
+		"title": "入門攻略",
+		"isLogin": false,
+		"userName": "Kami",
+		"userId": "1",
+		"js_src": [
+			"js/markdown.js",
+			"js/onboard/onboard.js"
+		],
+		"css_src": [
+			"css/markdownContent.css",
+			"css/onboard/onboard.css"
+		],
+		"main_components": {
+			"__bbc_id": "onboardContent",
+			"__bbc_name": "__onboardContent",
+			"__bbc_data": {
+				"leftContent": {
+					"__bbc_id": "itemList",
+					"__bbc_name": "__itemList",
+					"__bbc_data": {
+						"items": [
+							{
+								"id": 1,
+								"title": "報到",
+								"checked": true
+							},
+							{
+								"id": 2,
+								"title": "確認slack加入",
+								"checked": false
+							},
+							{
+								"id": 3,
+								"title": "新人報到程序表",
+								"checked": false
+							},
+							{
+								"id": 4,
+								"title": "領電腦",
+								"checked": false
+							},
+							{
+								"id": 5,
+								"title": "確認awoo信箱申請",
+								"checked": false
+							}
+						],
+						"rate": 17
+					}
+				},
+				"rightContent": {
+					"__bbc_id": "itemContent",
+					"__bbc_name": "__itemContent",
+					"__bbc_data": {
+						"markdown_content": {
+							"__bbc_id": "markdownContent",
+							"__bbc_name": "__markdownContent_layout",
+							"__bbc_data": {
+							}
+						},
+						"itemId": 1,
+						"itemTrueId": 1,
+						"itemTitle": "報到",
+						"itemContent": "台北公司：找人資主管 nike報到 \n 嘉義公司:找小雞或者船長報到",
+						"itemChecked": true
+					}
+				}
+			}
+		}
+	}
+}
