@@ -19,6 +19,7 @@ class BASE_Controller extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+
 		include_once 'models/v2/inc.php';
 		include_once 'application/libraries/BobBuilder/inc.php';
 		include_once 'Dal/inc.php';
@@ -29,7 +30,9 @@ class BASE_Controller extends CI_Controller
 		$inputClassName = self::InputClassPrefix . '\\' . $this->_getSubNamespace();
 		$this->setDalInput($inputClassName);
 		$this->baseUrl = base_url();
+
 		$this->_loginData();
+
 		$this->isPermission();
 	}
 
@@ -71,11 +74,13 @@ class BASE_Controller extends CI_Controller
 	protected function setDalInput($inputClassName)
 	{
 		$hasClass = true;
-		try {
+
+		if (class_exists($inputClassName)) {
 			$this->dalInput = new $inputClassName($this->input);
-		} catch (\Throwable $e) {
+		} else {
 			$hasClass = false;
 		}
+		
 		if ($hasClass) {
 			$contentType = empty($_SERVER['CONTENT_TYPE']) ? '' : $_SERVER['CONTENT_TYPE'];
 			switch ($contentType) {
@@ -115,6 +120,7 @@ class BASE_Controller extends CI_Controller
 	{
 		$this->modelUserManage = $this->_freshmanLoader->UserManage
 			->setResultSetInterface('Dal\Result\Onboard\UserManageSet');
+
 		$isAdmin = $this->modelUserManage->checkManager($userId);
 		return $isAdmin;
 	}

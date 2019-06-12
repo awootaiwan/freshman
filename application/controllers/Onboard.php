@@ -19,6 +19,7 @@ class Onboard extends BASE_Controller
         $this->_blueprint->prepare($page);
         $this->setLayOutFreshmanBlutprint($this->_blueprint);
         $this->_initViewElem($this->_blueprint);
+
     }
 
     private function _initModelsByIndex()

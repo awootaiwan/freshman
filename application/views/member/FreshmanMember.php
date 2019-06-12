@@ -1,5 +1,5 @@
-<link href="/freshman/css/freshman/reset.css" rel="stylesheet" type="text/css" media="all">
-<link href="/freshman/css/freshmanMember/freshmanMember.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" media="all">
+<link href="<?php echo base_url();?>css/freshman/reset.css" rel="stylesheet" type="text/css" media="all">
+<link href="<?php echo base_url();?>css/freshmanMember/freshmanMember.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <div class="member">
     <h1>個人資訊</h1>
@@ -22,6 +22,6 @@
 
 <?php if(!empty($js_src)):?>
     <?php foreach($js_src as $js):?>
-        <script src="<?= $js ?>?<?php echo time()?>"></script>
+        <script src="<?= $js ?>"></script>
     <?php endforeach?>
 <?php endif?>

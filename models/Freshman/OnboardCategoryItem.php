@@ -1,5 +1,5 @@
 <?php
-namespace Models\InternStageDb;
+namespace Models\Freshman;
 
 class OnboardCategoryItem extends \Models\v2\Pdo
 {

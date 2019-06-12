@@ -31,7 +31,7 @@ window.onload = function () {
 };
 
 
-var baseUrl = `${location.protocol}//${location.host}/freshman`;
+var baseUrl = `${location.protocol}//${location.host}`;
 
 async function postAPI(url, data) {
     return await fetch(url, {

@@ -14,7 +14,7 @@
     <script src="<?= base_url() ?>js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
     <?php foreach ($css_src as $css) : ?>
-        <link href="<?= $css ?>?<?php echo time()?>" rel="stylesheet">
+        <link href="<?= $css ?>" rel="stylesheet">
     <?php endforeach ?>
     <link href="<?= base_url() ?>css/fullscreen.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?= base_url() ?>js/fold/foldgutter.css" rel="stylesheet" type="text/css" media="all">
@@ -162,7 +162,7 @@
 <meta name="google-signin-scope" content="profile email">
 <meta name="google-signin-client_id" content="153023794012-7oso7r9dfk4h7tbhff42s61kpujlv434.apps.googleusercontent.com">
 <?php foreach ($js_src as $js) : ?>
-    <script src="<?= $js ?>?<?php echo time()?>"></script>
+    <script src="<?= $js ?>"></script>
 <?php endforeach ?>
 
 </html>

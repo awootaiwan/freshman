@@ -1,5 +1,5 @@
 <?php
-namespace Models\InternStageDb;
+namespace Models\Freshman;
 
 class TutorialCourse extends \Models\v2\Pdo
 {

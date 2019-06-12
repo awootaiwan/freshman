@@ -3,31 +3,31 @@ $baseUrl = base_url();
 define("LOGIN", "<a class='g-signout2' href='{$baseUrl}' ><i class='fas fa-sign-in-alt'></i>登入</a>");
 define("LOGOUT", '<a class="g-signout2" href="#" onclick="signOut();"><i class="fas fa-sign-out-alt"></i>登出</a>');
 
-define('touristURL', array(
+const TOURISTURL = array(
     "onboard/touristJoin"
-));
+);
 
-define('userURL', array(
+const USERURL = array(
     "onboard",
     "showLearn",
-));
+);
 
-define('manageURL', array(
+const MANAGEURL = array(
     "onboardAdmin",
     "deptCategoryManage/deptRoute",
     "onboardAdmin/userRoute",
     "manageLearn",
-));
+);
 
-define('adminURL', array(
+const ADMINURL = array(
     "deptManage",
     "userManage"
-));
+);
 
-define('icon', array(
+const ICON = array(
     "onboard" => "fas fa-torah",
     "showLearn" => "fas fa-book-open"
-));
+);
 
 if (!function_exists('header_permission')) {
     function header_permission($baseUrl, $isAdmin)
@@ -36,36 +36,34 @@ if (!function_exists('header_permission')) {
         $CI->lang->load('header', 'zhtw');
         $backend_menu = array();
         if (!isset($_SESSION['uid'])) {
-            foreach (touristURL as $value) {
+            foreach (TOURISTURL as $value) {
                 $key = (explode("/", $value));
                 $header_menu[] = array(
                     "menu_name" => $CI->lang->line($key[0]),
                     "route" => $baseUrl . $value,
-                    "icon" => icon[$key[0]]
+                    "icon" => ICON[$key[0]]
                 );
             }
             $logtype = LOGIN;
             $userName = $CI->lang->line('touristJoin');
         } else {
-            foreach (userURL as $value) {
+            foreach (USERURL as $value) {
                 $key = (explode("/", $value));
                 $header_menu[] = array(
                     "menu_name" => $CI->lang->line(end($key)),
                     "route" => $baseUrl . $value,
-                    "icon" => icon[$key[0]]
+                    "icon" => ICON[$key[0]]
                 );
             }
             if ($isAdmin['count']) {
-                foreach (manageURL as $value) {
+                foreach (MANAGEURL as $value) {
                     $key = (explode("/", $value));
                     $backend_menu[] = array(
                         "menu_name" => $CI->lang->line(end($key)),
                         "route" => $baseUrl . $value,
                     );
                 }
-            }
-            if ($isAdmin['isAdmin']) {
-                foreach (adminURL as $value) {
+                foreach (ADMINURL as $value) {
                     $key = (explode("/", $value));
                     $backend_menu[] = array(
                         "menu_name" => $CI->lang->line(end($key)),
