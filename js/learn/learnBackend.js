@@ -5,8 +5,7 @@ const tutorial_id = $(".relation").data('id');
 if (tutorial_id) {
     $(".getTutorial").each(function () {
         if ($(this).attr('id') == tutorial_id) {
-            $(this).css("background-color", "rgb(70, 156, 255)");
-
+            $(this).css({'background-color':'rgb(70, 156, 255)','color':'white'});
         }
     })
 }

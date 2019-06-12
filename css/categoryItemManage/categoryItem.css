@@ -120,6 +120,7 @@ textarea {
     left: -15vw;
     visibility: hidden;
     min-width: 30vw;
+    max-width: 200px;
     background-color: rgba(0, 0, 0, .8);
     color: #fff;
     text-align: left;
@@ -127,7 +128,9 @@ textarea {
     padding: 10px 10px 10px 15px;
     z-index: 1;
     font-size: 16px;
+    top: 6vh;
     box-shadow: 8px 8px 8px 0px rgba(145, 145, 145, 0.5);
+    white-space: pre-wrap;
 }
 
 .tooltip:hover .tooltiptext {

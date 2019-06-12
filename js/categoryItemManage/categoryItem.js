@@ -198,7 +198,7 @@ $("#search").keydown(function(event){
     }
 });
 
-$(`.show-categorys #${$(".content").attr("id")}`).css("background-color", "rgb(70, 156, 255)");
+$(`.show-categorys #${$(".content").attr("id")}`).css({'background-color':'rgb(70, 156, 255)','color':'white'});
 
 $(window).resize(function () {
     if ($(window).width() > 768) {
