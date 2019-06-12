@@ -60,7 +60,7 @@
 <script src="<?= base_url() ?>js/fold/xml-fold.js"></script>
 <script src="<?= base_url() ?>js/markdown.js"></script>
 <script>
-    var baseUrl = `${location.protocol}//${location.host}/`;
+    var baseUrl = `<?= base_url() ?>`;
 
     var URL = `${baseUrl}/WelcomeFreshman/markdownData`;
 

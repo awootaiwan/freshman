@@ -18,7 +18,9 @@
     <?php endforeach ?>
     <link href="<?= base_url() ?>css/fullscreen.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?= base_url() ?>js/fold/foldgutter.css" rel="stylesheet" type="text/css" media="all">
-    
+    <script>
+        var baseUrl = `<?= base_url() ?>`;
+    </script>
     <title><?= $title ?></title>
 </head>
 

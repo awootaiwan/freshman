@@ -8,8 +8,8 @@ const TOURISTURL = array(
 );
 
 const USERURL = array(
-    "onboard",
     "showLearn",
+    "onboard"
 );
 
 const MANAGEURL = array(
