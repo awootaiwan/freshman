@@ -37,7 +37,7 @@ $("#btnOKAddTutorial").click(function () {
             'action': "add",
             title
         }
-        let url = `${baseUrl}/ManageLearn/manageTutorial`
+        let url = `${baseUrl}ManageLearn/manageTutorial`
         postAPI(url, data)
         .then(function (value) {
             if (value.result) {
@@ -59,7 +59,7 @@ $("#btn-dialogConfirm").click(function () {
             'action': "delete",
             'tutorial_id': id
         }
-        fetch(`${baseUrl}/ManageLearn/manageTutorial`, {
+        fetch(`${baseUrl}ManageLearn/manageTutorial`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -6,7 +6,7 @@ $(document).ready(function () {
      let tid = $("#tutorial_id").val();
      $("#t" + tid).prop('open', 'open');
      
-     let url = `${baseUrl}/manageLearn/setCourse`;
+     let url = `${baseUrl}manageLearn/setCourse`;
      let cid = $("#course_id").val();
      let data = {cid};
 
@@ -40,19 +40,19 @@ $(document).keydown(function (e) {
 $(".show-categorys").on('click', '.showContent', function () {
      let cid = $(this).parent('li').attr('id').substr(1)
      let tid = $(this).parents('details').attr('id').substr(1);
-     location.replace(baseUrl + "/showLearn?" + 'cid=' + cid + "&tid=" + tid)
+     location.replace(baseUrl + "showLearn?" + 'cid=' + cid + "&tid=" + tid)
 })
 
 $(".last_course").click(function () {
      let cid = $("#last_course").val();
      let tid = $("#tutorial_id").val();
-     location.replace(baseUrl + "/showLearn?" + 'cid=' + cid + "&tid=" + tid)
+     location.replace(baseUrl + "showLearn?" + 'cid=' + cid + "&tid=" + tid)
 })
 
 $(".next_course").click(function () {
      let cid = $("#next_course").val();
      let tid = $("#tutorial_id").val();
-     location.replace(baseUrl + "/showLearn?" + 'cid=' + cid + "&tid=" + tid)
+     location.replace(baseUrl + "showLearn?" + 'cid=' + cid + "&tid=" + tid)
 
 })
 
@@ -69,7 +69,7 @@ function checkCidToOpen() {
 
 $('#btnSearch').click(function () {
      let search = $('#search').val().trim();
-     let URL = `${baseUrl}/showLearn/searchTutorial`;
+     let URL = `${baseUrl}showLearn/searchTutorial`;
      let data = { search };
      postAPI(URL, data)
      .then(function (value) {

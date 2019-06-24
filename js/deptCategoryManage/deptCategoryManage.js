@@ -9,7 +9,7 @@ $( ".category-list" ).sortable({
     stop: function(e, ui){
         ui.item.css('transform', '');
         ui.item.css('cursor', 'pointer');
-        let url = `${baseUrl}/deptCategoryManage/updDeptRouteSort`;
+        let url = `${baseUrl}deptCategoryManage/updDeptRouteSort`;
         let i = 1;
         $(".userCategorys .show-category .category-list").children().each(function() {
             let categoryId = $(this).attr("key");
@@ -29,7 +29,7 @@ $( ".category-list" ).sortable({
         });
     },
     update: function(e, ui) {
-        let url = `${baseUrl}/deptCategoryManage/updDeptRouteSort`;
+        let url = `${baseUrl}deptCategoryManage/updDeptRouteSort`;
         let i = 1;
         $(".userCategorys .show-category .category-list").children().each(function() {
             let categoryId = $(this).attr("key");
@@ -51,7 +51,7 @@ $( ".category-list" ).sortable({
     receive: function(e, ui) {
         let parent = ui.sender[0].parentElement.parentElement.className;
         if (parent == "categorys") {
-            let url = `${baseUrl}/deptCategoryManage/insDeptRoute`;
+            let url = `${baseUrl}deptCategoryManage/insDeptRoute`;
             let categoryId = ui.item.attr("key");
             let departmentId = $("#departmentId").val();
             let data = {
@@ -63,7 +63,7 @@ $( ".category-list" ).sortable({
                 return json;
             });
         } else {
-            let url = `${baseUrl}/deptCategoryManage/delDeptRoute`;
+            let url = `${baseUrl}deptCategoryManage/delDeptRoute`;
             let categoryId = ui.item.attr("key");
             let departmentId = $("#departmentId").val();
 
@@ -84,7 +84,7 @@ $(".select-department select").change(function() {
     let departmentId = $(".select-department select").val();
     
     if (departmentId) {
-        location.href = `${baseUrl}/deptCategoryManage/deptRoute?departmentId=${departmentId}`;
+        location.href = `${baseUrl}deptCategoryManage/deptRoute?departmentId=${departmentId}`;
     }
 });
 
@@ -107,7 +107,7 @@ $(".category").each(function() {
         $(".item-list").empty();
         $(".item-dialog").css("display", "block");
         
-        let url = `${baseUrl}/onboardAdmin/getUserRouteCategoryItems`;
+        let url = `${baseUrl}onboardAdmin/getUserRouteCategoryItems`;
         let data = {
             id
         };

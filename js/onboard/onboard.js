@@ -1,9 +1,10 @@
 $(document).ready(function () {
+    console.log('baseUrl :', baseUrl);
     let postUrl = "";
     if ($("#loginUserId").val() == 0) {
-        postUrl = `${baseUrl}/api/getItemById`;
+        postUrl = `${baseUrl}api/getItemById`;
     } else {
-        postUrl = `${baseUrl}/onboardAdmin/getItemById`;
+        postUrl = `${baseUrl}onboardAdmin/getItemById`;
     }
     data = {
         id: $("#itemTrueId").val()
@@ -27,7 +28,7 @@ if ($("#loginUserId").val() == 0) {
     $(".item-list").find("li").each(function () {
         $(this).click(function () {
             let id = $(this).attr("id");
-            location.href = `${baseUrl}/onboard/touristJoin?id=${id}`;
+            location.href = `${baseUrl}onboard/touristJoin?id=${id}`;
         })
     });
 
@@ -35,7 +36,7 @@ if ($("#loginUserId").val() == 0) {
     $(".item-list").find("li").each(function () {
         $(this).click(function () {
             let id = $(this).attr("id");
-            location.href = `${baseUrl}/onboard?id=${id}`;
+            location.href = `${baseUrl}onboard?id=${id}`;
         })
     });
 
@@ -52,16 +53,16 @@ if ($("#loginUserId").val() == 0) {
             id,
             checked
         }
-        postUrl = `${baseUrl}/onboard/updRouteCheck`;
+        postUrl = `${baseUrl}onboard/updRouteCheck`;
 
         postAPI(postUrl, data)
         .then(json => {
             if (json.result) {
                 if (isChecked) {
                     if (json.nextUnCheckItemId != "") {
-                        location.href = `${baseUrl}/onboard?id=${json.nextUnCheckItemId}`;
+                        location.href = `${baseUrl}onboard?id=${json.nextUnCheckItemId}`;
                     } else {
-                        location.href = `${baseUrl}/onboard`;
+                        location.href = `${baseUrl}onboard`;
                     }
                 } else {
                     $(`#${id}`).attr("class", "item-li");

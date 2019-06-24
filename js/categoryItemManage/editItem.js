@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let postUrl = `${baseUrl}/onboardAdmin/getItemById`;
+    let postUrl = `${baseUrl}onboardAdmin/getItemById`;
     data = {
         id : $("#id").val()
     };
@@ -53,7 +53,7 @@ $("#btnInsertDone").click(function() {
             content,
             categoryIds
         }
-        let postUrl = `${baseUrl}/onboardAdmin/insItem`;
+        let postUrl = `${baseUrl}onboardAdmin/insItem`;
         postAPI(postUrl, data)
         .then(json => {
             if (json.result) {
@@ -94,7 +94,7 @@ $("#btnUpdateDone").click(function() {
             oldCategoryIds
         }
         
-        let postUrl = `${baseUrl}/onboardAdmin/editItem`;
+        let postUrl = `${baseUrl}onboardAdmin/editItem`;
         postAPI(postUrl, data)
         .then(json => {
             if (json.result) {
@@ -131,5 +131,5 @@ $("#btnCancel").click(function() {
     $(".tags").each(function() {
         newCategoryIds.push(`${$(this).attr("key")}`);
     })
-    location.href = `${baseUrl}/onboardAdmin?id=${newCategoryIds[0]}`;
+    location.href = `${baseUrl}onboardAdmin?id=${newCategoryIds[0]}`;
 })

@@ -1,7 +1,7 @@
 // var baseUrl = `${location.protocol}//${location.host}/freshman`;
 
 $(".select-department select").change(function () {
-    let url = `${baseUrl}/userManage?`;
+    let url = `${baseUrl}userManage?`;
     location.href = url + "dept=" + this.value;
 });
 
@@ -17,7 +17,7 @@ $(".isManager").on("click", function(e){
 });
 
 $('.isManager > input').change(function setManager () {
-    let url = `${baseUrl}/userManage/setManager`;
+    let url = `${baseUrl}userManage/setManager`;
     if (this.checked) {
         method = 'add';
     } else {
@@ -94,7 +94,7 @@ $(".member-bg-close").click(function () {
 })
 
 $(".btnOKAddUser").click(function () {
-    let url = baseUrl + "/Login/setFreshmanUser"
+    let url = baseUrl + "Login/setFreshmanUser"
     let data = {
         "action" : $("#checktype").val(),
         "name" : $("#user_name").val(),

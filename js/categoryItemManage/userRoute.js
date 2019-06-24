@@ -9,7 +9,7 @@ $( ".category-list" ).sortable({
     stop: function(e, ui){
         ui.item.css('transform', '');
         ui.item.css('cursor', 'pointer');
-        let url = `${baseUrl}/onboardAdmin/updUserRouteSort`;
+        let url = `${baseUrl}onboardAdmin/updUserRouteSort`;
         let i = 1;
         $(".userCategorys .show-category .category-list").children().each(function() {
             let categoryId = $(this).attr("key");
@@ -31,7 +31,7 @@ $( ".category-list" ).sortable({
         });
     },
     update: function(e, ui) {
-        let url = `${baseUrl}/onboardAdmin/updUserRouteSort`;
+        let url = `${baseUrl}onboardAdmin/updUserRouteSort`;
         let i = 1;
         $(".userCategorys .show-category .category-list").children().each(function() {
             let categoryId = $(this).attr("key");
@@ -56,7 +56,7 @@ $( ".category-list" ).sortable({
         let parent = ui.sender[0].parentElement.parentElement.className;
         //加入分類
         if (parent == "categorys") {
-            let url = `${baseUrl}/onboardAdmin/insUserRoute`;
+            let url = `${baseUrl}onboardAdmin/insUserRoute`;
             let categoryId = ui.item.attr("key");
             let userId = $("#userId").val();
             let data = {
@@ -68,7 +68,7 @@ $( ".category-list" ).sortable({
                 return json;
             });
         } else {   //移除分類
-            let url = `${baseUrl}/onboardAdmin/delUserRoute`;
+            let url = `${baseUrl}onboardAdmin/delUserRoute`;
             let categoryId = ui.item.attr("key");
             let userId = $("#userId").val();
 
@@ -87,7 +87,7 @@ $(".select-department select").change(function() {
     let departmentId = $(".select-department select").val();
     
     if (departmentId) {
-        let url = `${baseUrl}/onboardAdmin/getUserRouteUserList`;
+        let url = `${baseUrl}onboardAdmin/getUserRouteUserList`;
         let data = {
             departmentId
         }
@@ -110,7 +110,7 @@ $(".select-user select").change(function() {
         alert("請選擇部門");
     }
     if(departmentId && userId) {
-        location.href = `${baseUrl}/onboardAdmin/userRoute?departmentId=${departmentId}&userId=${userId}`;
+        location.href = `${baseUrl}onboardAdmin/userRoute?departmentId=${departmentId}&userId=${userId}`;
     }
 })
 
@@ -118,7 +118,7 @@ if($("#departmentId").val()) {
     $(".select-department select").children().each(function() {
         if ($(this).val() == $("#departmentId").val()){
             $(this).attr("selected", "true");
-            let url = `${baseUrl}/onboardAdmin/getUserRouteUserList`;
+            let url = `${baseUrl}onboardAdmin/getUserRouteUserList`;
             let data = {
                 departmentId: $("#departmentId").val()
             }
@@ -155,7 +155,7 @@ $(".category").each(function() {
         $(".item-list").empty();
         $(".item-dialog").css("display", "block");
         
-        let url = `${baseUrl}/onboardAdmin/getUserRouteCategoryItems`;
+        let url = `${baseUrl}onboardAdmin/getUserRouteCategoryItems`;
         let data = {
             id
         };

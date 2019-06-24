@@ -1,9 +1,9 @@
 $(".btnCancelAddUser").on('click', function() {
-    window.location.href = baseUrl + "/WelcomeFreshman"
+    window.location.href = baseUrl + "WelcomeFreshman"
 })
 
 $(".btnOKAddUser").on('click', function() {
-    let url = baseUrl + "/Login/setFreshmanUser"
+    let url = baseUrl + "Login/setFreshmanUser"
     let data = {
         "action" : "insert",
         "name" : $("#user_name").val(),

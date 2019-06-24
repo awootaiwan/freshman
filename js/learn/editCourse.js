@@ -103,13 +103,13 @@ $("#btn-dialogConfirm").click(function () {
 
 async function manageCourse(action, params) {
     if (action == 'add') {
-        URL = `${baseUrl}/manageLearn/addCourse`;
+        URL = `${baseUrl}manageLearn/addCourse`;
     }
     if (action == 'set') {
-        URL = `${baseUrl}/manageLearn/setCourse`;
+        URL = `${baseUrl}manageLearn/setCourse`;
     }
     if (action == 'manage') {
-        URL = `${baseUrl}/manageLearn/manageCourse`;
+        URL = `${baseUrl}manageLearn/manageCourse`;
     }
     return await connectAPI(URL, params);
 };

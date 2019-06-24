@@ -1,4 +1,4 @@
-Freshman v1.2.3
+Freshman v1.2.4
 ===
 
 :accept: 需加入`awoo團隊`才能使用本專案 

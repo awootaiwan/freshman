@@ -55,7 +55,7 @@ $("form").on("submit", function (e) {
                 abbreviation: abbr,
                 name
             }
-            let url = `${baseUrl}/DeptManage/updDepartment`;
+            let url = `${baseUrl}DeptManage/updDepartment`;
             postAPI(url, data)
             .then(json => {
                 if (json.result) {
@@ -72,7 +72,7 @@ $("form").on("submit", function (e) {
                 abbreviation: abbr,
                 name
             }
-            let url = `${baseUrl}/DeptManage/insDepartment`;
+            let url = `${baseUrl}DeptManage/insDepartment`;
             postAPI(url, data)
             .then(json => {
                 if (json.result) {
@@ -115,7 +115,7 @@ $("#btn-dialogConfirm").click(function () {
     let data = {
         abbreviation: id
     }
-    let url = `${baseUrl}/DeptManage/delDepartment`;
+    let url = `${baseUrl}DeptManage/delDepartment`;
     postAPI(url, data)
     .then(json => {
         if (json.result) {

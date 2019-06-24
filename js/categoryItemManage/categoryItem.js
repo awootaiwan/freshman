@@ -1,7 +1,7 @@
 $(".show-categorys").find("li").each(function () {
     $(this).click(function () {
         let id = $(this).attr("id");
-        location.href = `${baseUrl}/onboardAdmin?id=${id}`;
+        location.href = `${baseUrl}onboardAdmin?id=${id}`;
     })
 });
 
@@ -42,19 +42,19 @@ $("#btnOKAddCategory").click(function () {
                 title,
                 description
             }
-            postUrl = `${baseUrl}/onboardAdmin/editCategory`;
+            postUrl = `${baseUrl}onboardAdmin/editCategory`;
         } else {
             data = {
                 title,
                 description
             }
-            postUrl = `${baseUrl}/onboardAdmin/insCategory`;
+            postUrl = `${baseUrl}onboardAdmin/insCategory`;
         }
     
         postAPI(postUrl, data)
         .then(json => {
             if (json.result) {
-                location.href = `${baseUrl}/onboardAdmin?id=${json.id}`
+                location.href = `${baseUrl}onboardAdmin?id=${json.id}`
             }
             return json;
         })
@@ -96,12 +96,12 @@ $("#btn-dialogConfirm").click(function () {
         newCategoryIds.push(`${$(this).attr("key")}`);
     })
     if($("#delType").val() == "分類") {
-        delUrl = `${baseUrl}/onboardAdmin/delCategory`;
+        delUrl = `${baseUrl}onboardAdmin/delCategory`;
         postAPI(delUrl, data)
         .then(json => {
             if (json.result) {
                 alert("刪除成功！！！！");
-                location.href = `${baseUrl}/onboardAdmin`;
+                location.href = `${baseUrl}onboardAdmin`;
             }
             return json;
         }) 
@@ -114,13 +114,13 @@ $("#btn-dialogConfirm").click(function () {
         $(".tags").each(function() {
             newCategoryIds.push(`${$(this).attr("key")}`);
         })
-        delUrl = `${baseUrl}/onboardAdmin/delItem`
+        delUrl = `${baseUrl}onboardAdmin/delItem`
         postAPI(delUrl, data)
         .then(json => {
             if (json.result) {
                 alert("刪除成功！！！！");
                 if (newCategoryIds.length > 0) {
-                    location.href = `${baseUrl}/onboardAdmin?id=${newCategoryIds[0]}`;
+                    location.href = `${baseUrl}onboardAdmin?id=${newCategoryIds[0]}`;
                 } else {
                     location.reload();
                 }
@@ -139,12 +139,12 @@ $(".deleteItem").click(function() {
 
 $("#btnToAddItemPage").click(function () {
     let id =$(".content").attr("id");
-    location.href = `${baseUrl}/onboardAdmin/addItemManage?categoryId=${id}`;
+    location.href = `${baseUrl}onboardAdmin/addItemManage?categoryId=${id}`;
 });
 
 $(".editItem").click(function () {
     let id = $(this).attr("key");
-    location.href = `${baseUrl}/onboardAdmin/editItemManage?id=${id}`;
+    location.href = `${baseUrl}onboardAdmin/editItemManage?id=${id}`;
 });
 
 $("#btnSearch").click(function () {
@@ -152,7 +152,7 @@ $("#btnSearch").click(function () {
     if (keyword == "0") {
         keyword = "!0";
     }
-    location.href = `${baseUrl}/onboardAdmin?keyword=${keyword}`;
+    location.href = `${baseUrl}onboardAdmin?keyword=${keyword}`;
 });
 
 $(".content-items").sortable({
@@ -174,7 +174,7 @@ $(".content-items").sortable({
                     id,
                     "sort": i
                 };
-                let url = `${baseUrl}/onboardAdmin/updCategoryItemSort`;
+                let url = `${baseUrl}onboardAdmin/updCategoryItemSort`;
                 postAPI(url, data)
                 i += 1;
             }
@@ -187,7 +187,7 @@ $(".content-items").find("li").each(function () {
     $(this).click(function (e) {
         let id = $(this).attr("key");
         if (e.target.className != "drop-down-item" && e.target.className != "deleteItem") {
-            location.href = `${baseUrl}/onboardAdmin/editItemManage?id=${id}`;
+            location.href = `${baseUrl}onboardAdmin/editItemManage?id=${id}`;
         }
     });
 });

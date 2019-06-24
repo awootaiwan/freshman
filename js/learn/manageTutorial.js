@@ -10,7 +10,7 @@ $('#btn-dialogConfirm').click(function () {
         manageTutorial('delete')
         .then(function (value) {
             if (value.result) {
-                let url = `${baseUrl}/manageLearn`;
+                let url = `${baseUrl}manageLearn`;
                 window.location.href = url;
             } else {
                 alert("刪除出錯囉！！");
@@ -27,7 +27,7 @@ $("#btn-dialogCancel").click(function () {
 async function manageTutorial(action, title = '') {
     let tutorial_id = $('.relation').data('id').toString();
     let data = { action, tutorial_id, title };
-    let URL = `${baseUrl}/manageLearn/manageTutorial`;
+    let URL = `${baseUrl}manageLearn/manageTutorial`;
 
     return await postAPI(URL, data);
 };
@@ -43,7 +43,7 @@ $('#tutorial-save').click(function () {
         }
 
         let data = { action, tutorial_id, title, row };
-        let URL = `${baseUrl}/manageLearn/setTutorialCourse`;
+        let URL = `${baseUrl}manageLearn/setTutorialCourse`;
 
         postAPI(URL, data)
         .then(function (value) {
@@ -103,7 +103,7 @@ $('#search-courses').click(function () {
         search 
     };
 
-    let URL = `${baseUrl}/manageLearn/searchCourse`;
+    let URL = `${baseUrl}manageLearn/searchCourse`;
 
     postAPI(URL, data)
     .then(function (value) {
@@ -119,7 +119,7 @@ $('#search-courses').click(function () {
 
 $('#btnSearch').click(function () {
     let search = $('#search').val().trim();
-    let URL = `${baseUrl}/manageLearn/searchTutorial`;
+    let URL = `${baseUrl}manageLearn/searchTutorial`;
     let data = { search };
     postAPI(URL, data)
     .then(function (value) {
