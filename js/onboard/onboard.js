@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log('baseUrl :', baseUrl);
     let postUrl = "";
     if ($("#loginUserId").val() == 0) {
         postUrl = `${baseUrl}api/getItemById`;
